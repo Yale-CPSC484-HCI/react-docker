@@ -1,5 +1,7 @@
 # Run container with specified image name and interactive terminal
-# usage: run_container.sh <image_name> <directory-to-bind> <port-to-bind> (e.g., run_container.sh react-env:latest)
+# Usage: run_container.sh <image_name> <directory-to-bind> <port-to-bind> (e.g., run_container.sh react-env:latest)
+# The optional arguments allow you to bind a local directory with a react app to /app in the container and specify a port to bind for the Vite development server. If no port is provided, it defaults to 5173. 
+# Note that the app must be run as "npm run dev -- --host 0.0.0.0" for the app to be accessible from the host machine at http://127.0.0.1:<port-to-bind>.
 #!/bin/bash
 set -e # exit if any error comes up!
 
