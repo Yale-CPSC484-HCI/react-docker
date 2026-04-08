@@ -17,7 +17,7 @@ After having both Docker (and XQuarts in OSX), run:
 
 ```bash
 $ ./build_container.sh react-env:latest # builds container
-$ ./run_container.sh react-env:latest # runs container in interactive mode and exporting display
+$ ./run_container.sh react-env:latest <path-to-folder-with-react-app># runs container in interactive mode, exporting display, and setting an optional folder with a react app in the /app directory of the container
 ```
 
 If the `run_container.sh` script fails due to an errro that says `check if the path is correct and if the daemon is running`, then make sure to open the Docker Desktop app in OSX before running the script.
