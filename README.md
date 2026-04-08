@@ -1,6 +1,6 @@
 # CPSC 4840/5840: Default Environment for Assignment 5
 
-This repository shows how one can build an ubuntu 22.04 environment to test or develop a react app with the dependencies required for Assignment 5. The course staff will be using this container to test our apps developed for the course. The apps are generally expected to run with:
+This repository shows how one can build an ubuntu 24.04 environment to test or develop a react app with the dependencies required for Assignment 5. The course staff will be using this container to test our apps developed for the course. The apps are generally expected to run with:
 ```bash
 $ npm install
 $ npm run dev -- --host 0.0.0.0
@@ -21,6 +21,13 @@ $ ./run_container.sh react-env:latest <path-to-folder-with-react-app># runs cont
 ```
 
 If the `run_container.sh` script fails due to an errro that says `check if the path is correct and if the daemon is running`, then make sure to open the Docker Desktop app in OSX before running the script.
+
+## Notes
+
+- Chromium can be launched within the Docker environment, once built, using:
+```bash
+$ chromium --no-sandbox --disable-setuid-sandbox
+```
 
 ## Files
 
