@@ -1,6 +1,10 @@
-# Default Environment for Assignment 5
+# CPSC 4840/5840: Default Environment for Assignment 5
 
-This repository shows how one can build an ubuntu 24.04 environment to test or develop a react app with the dependencies required for Assignment 5.
+This repository shows how one can build an ubuntu 24.04 environment to test or develop a react app with the dependencies required for Assignment 5. The course staff will be using this container to test our apps developed for the course. The apps are expected to run with:
+```bash
+$ npm install
+$ npm run dev
+```
 
 ## Dependencies
 
